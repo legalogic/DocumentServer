@@ -1,0 +1,1 @@
+docker build -t lgx-onlyoffice-img:5.1.5.59 ..

@@ -1,22 +1,23 @@
 
-echo 'building onlyofficeeeee'
-
+echo '*************************** building onlyoffice ******************************'
 apt-get update
 apt-get upgrade -y
 apt-get install sudo
+sudo apt-get install curl -y
+sudo apt-get install gnupg2 -y
 
-#install nodejs + npm using nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
-source ~/.bashrc
-nvm install 
-nvm install 8.12
-nvm use 8.12
+echo '*************************** installing npm + node ******************************'
+sudo apt-get install -yq curl apt-transport-https ca-certificates
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+node -v
+npm -v
 sudo npm install -g npm
 
-#install grunt
+echo '*************************** installing grunt-cli ******************************'
 sudo npm install -g grunt-cli
 
-#install additional dependencies
+echo '*************************** installing dependencies ******************************'
 sudo apt-get install --force-yes -yq \
     wget \
     build-essential \
@@ -36,10 +37,11 @@ sudo apt-get install --force-yes -yq \
     git \
     subversion
 
+# echo '*************************** building 3rd parties ******************************'
+# cd ../core/Common/3dParty && ./make.sh
 
 
 
 
 
-
-sleep infinity #maybe change that to tail the onlyoffice log
+#sleep infinity #maybe change that to tail the onlyoffice log
