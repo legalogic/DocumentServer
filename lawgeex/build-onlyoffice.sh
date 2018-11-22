@@ -37,10 +37,13 @@ sudo apt-get install --force-yes -yq \
     git \
     subversion
 
-# echo '*************************** building 3rd parties ******************************'
-# cd ../core/Common/3dParty && ./make.sh
+echo '*************************** building 3rd parties ******************************'
+cd ./core/Common/3dParty && ./make.sh
+cd ../.. && make
+cd ../server && make
 
-
+sudo apt-get update
+sudo apt-get install -y adduser libstdc++6 libcurl3 libxml2 libboost-regex-dev zlib1g fonts-dejavu fonts-liberation ttf-mscorefonts-installer fonts-crosextra-carlito fonts-takao-gothic fonts-opensymbol libxss1 libcairo2 xvfb libxtst6 libgconf2-4 libasound2
 
 
 
