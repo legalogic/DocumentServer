@@ -1,0 +1,21 @@
+[submodule "core"]
+	path = core
+	url = git@github.com:legalogic/onlyoffice-core-5.1.5.59.git
+[submodule "core-fonts"]
+	path = core-fonts
+	url = git@github.com:legalogic/onlyoffice-core-fonts.git
+[submodule "dictionaries"]
+	path = dictionaries
+	url = git@github.com:legalogic/onlyoffice-dictionaries-5.1.5.59.git
+[submodule "sdkjs"]
+	path = sdkjs
+	url = git@github.com:legalogic/onlyoffice-sdkjs-5.1.5.59.git
+[submodule "server"]
+	path = server
+	url = git@github.com:legalogic/onlyoffice-server-5.1.5.59.git
+[submodule "web-apps"]
+	path = web-apps
+	url = git@github.com:legalogic/onlyoffice-web-apps-5.1.5.59.git
+[submodule "sdkjs-plugins"]
+	path = sdkjs-plugins
+	url = git@github.com:legalogic/onlyoofice-sdkjs-plugins-5.1.5.59.git
