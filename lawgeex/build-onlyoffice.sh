@@ -37,10 +37,20 @@ sudo apt-get install --force-yes -yq \
     git \
     subversion
 
+echo '*************************** building 3rd parties ******************************'
+cd core/Common/3dParty && ./make.sh
 
+echo '*************************** building core ******************************'
+cd ../.. && make
 
+echo '*************************** building sdkjs ******************************'
+cd ../sdkjs && make
 
-#echo '*************************** building 3rd parties ******************************'
+echo '*************************** building server ******************************'
+cd ../server && make
+
+echo '*************************** installing documentserver dependencies ******************************'
+
 
 # cd ./core/Common/3dParty && ./make.sh
 # cd ../.. && make
