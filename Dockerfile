@@ -5,6 +5,11 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 COPY ./lawgeex/build-onlyoffice.sh /
 
+
+#TODO: clone --recursive lawgeex DocumentServer here
+
 RUN /build-onlyoffice.sh
+
+
 
 #ENTRYPOINT ["/bin/bash", "-c", "/build-onlyoffice.sh"]
