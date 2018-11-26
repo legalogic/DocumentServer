@@ -38,7 +38,7 @@ sudo apt-get install --force-yes -yq \
     subversion
 
 echo '*************************** building 3rd parties ******************************'
-cd core/Common/3dParty && ./make.sh
+cd ../core/Common/3dParty && ./make.sh
 
 echo '*************************** building core ******************************'
 cd ../.. && make
